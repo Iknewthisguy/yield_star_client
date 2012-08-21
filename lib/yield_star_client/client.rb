@@ -27,10 +27,10 @@ module YieldStarClient
       define_method(opt) { get_value(opt) }
     end
 
-    # def debug=(val)
-      # @debug = val
+    def debug=(val)
+      @debug = val
       # Savon.log = self.debug?
-    # end
+    end
 
     def debug?
       get_value(:debug).to_s == 'true'
