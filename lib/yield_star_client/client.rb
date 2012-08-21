@@ -29,7 +29,7 @@ module YieldStarClient
 
     def debug=(val)
       @debug = val
-      Savon.log = self.debug?
+      # Savon.log = self.debug?
     end
 
     def debug?
@@ -38,7 +38,7 @@ module YieldStarClient
 
     def logger=(val)
       @logger = val
-      Savon.logger = self.logger
+      # Savon.logger = self.logger
     end
 
     # Initializes the client. All options are truly optional; if the option
